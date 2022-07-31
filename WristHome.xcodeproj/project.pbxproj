@@ -1,0 +1,829 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E20C57EC2896BE4E00E32307 /* WristHome WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E20C57EB2896BE4E00E32307 /* WristHome WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E20C57F12896BE5000E32307 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E20C57F02896BE5000E32307 /* Assets.xcassets */; };
+		E20C57F72896BE5000E32307 /* WristHome WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E20C57F62896BE5000E32307 /* WristHome WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E20C57FC2896BE5000E32307 /* WristHomeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20C57FB2896BE5000E32307 /* WristHomeApp.swift */; };
+		E20C57FE2896BE5000E32307 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20C57FD2896BE5000E32307 /* ContentView.swift */; };
+		E20C58002896BE5000E32307 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20C57FF2896BE5000E32307 /* NotificationController.swift */; };
+		E20C58022896BE5000E32307 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20C58012896BE5000E32307 /* NotificationView.swift */; };
+		E20C58042896BE5000E32307 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20C58032896BE5000E32307 /* ComplicationController.swift */; };
+		E20C58062896BE5100E32307 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E20C58052896BE5100E32307 /* Assets.xcassets */; };
+		E20C58092896BE5100E32307 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E20C58082896BE5100E32307 /* Preview Assets.xcassets */; };
+		E20C58152896BE5100E32307 /* WristHomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20C58142896BE5100E32307 /* WristHomeTests.swift */; };
+		E20C581F2896BE5100E32307 /* WristHomeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20C581E2896BE5100E32307 /* WristHomeUITests.swift */; };
+		E20C58212896BE5100E32307 /* WristHomeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20C58202896BE5100E32307 /* WristHomeUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E20C57ED2896BE4E00E32307 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E20C57E12896BE4E00E32307 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E20C57EA2896BE4E00E32307;
+			remoteInfo = "WristHome WatchKit App";
+		};
+		E20C57F82896BE5000E32307 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E20C57E12896BE4E00E32307 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E20C57F52896BE5000E32307;
+			remoteInfo = "WristHome WatchKit Extension";
+		};
+		E20C58112896BE5100E32307 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E20C57E12896BE4E00E32307 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E20C57F52896BE5000E32307;
+			remoteInfo = "WristHome WatchKit Extension";
+		};
+		E20C581B2896BE5100E32307 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E20C57E12896BE4E00E32307 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E20C57EA2896BE4E00E32307;
+			remoteInfo = "WristHome WatchKit App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E20C58272896BE5100E32307 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E20C57F72896BE5000E32307 /* WristHome WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E20C582B2896BE5100E32307 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				E20C57EC2896BE4E00E32307 /* WristHome WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E20C57E72896BE4E00E32307 /* WristHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WristHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E20C57EB2896BE4E00E32307 /* WristHome WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WristHome WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E20C57F02896BE5000E32307 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E20C57F62896BE5000E32307 /* WristHome WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WristHome WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E20C57FB2896BE5000E32307 /* WristHomeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WristHomeApp.swift; sourceTree = "<group>"; };
+		E20C57FD2896BE5000E32307 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E20C57FF2896BE5000E32307 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		E20C58012896BE5000E32307 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		E20C58032896BE5000E32307 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		E20C58052896BE5100E32307 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E20C58082896BE5100E32307 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E20C580A2896BE5100E32307 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E20C580B2896BE5100E32307 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		E20C58102896BE5100E32307 /* WristHomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WristHomeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E20C58142896BE5100E32307 /* WristHomeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WristHomeTests.swift; sourceTree = "<group>"; };
+		E20C581A2896BE5100E32307 /* WristHomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WristHomeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E20C581E2896BE5100E32307 /* WristHomeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WristHomeUITests.swift; sourceTree = "<group>"; };
+		E20C58202896BE5100E32307 /* WristHomeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WristHomeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E20C57F32896BE5000E32307 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E20C580D2896BE5100E32307 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E20C58172896BE5100E32307 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E20C57E02896BE4E00E32307 = {
+			isa = PBXGroup;
+			children = (
+				E20C57EF2896BE4E00E32307 /* WristHome WatchKit App */,
+				E20C57FA2896BE5000E32307 /* WristHome WatchKit Extension */,
+				E20C58132896BE5100E32307 /* WristHomeTests */,
+				E20C581D2896BE5100E32307 /* WristHomeUITests */,
+				E20C57E82896BE4E00E32307 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E20C57E82896BE4E00E32307 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E20C57E72896BE4E00E32307 /* WristHome.app */,
+				E20C57EB2896BE4E00E32307 /* WristHome WatchKit App.app */,
+				E20C57F62896BE5000E32307 /* WristHome WatchKit Extension.appex */,
+				E20C58102896BE5100E32307 /* WristHomeTests.xctest */,
+				E20C581A2896BE5100E32307 /* WristHomeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E20C57EF2896BE4E00E32307 /* WristHome WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				E20C57F02896BE5000E32307 /* Assets.xcassets */,
+			);
+			path = "WristHome WatchKit App";
+			sourceTree = "<group>";
+		};
+		E20C57FA2896BE5000E32307 /* WristHome WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E20C57FB2896BE5000E32307 /* WristHomeApp.swift */,
+				E20C57FD2896BE5000E32307 /* ContentView.swift */,
+				E20C57FF2896BE5000E32307 /* NotificationController.swift */,
+				E20C58012896BE5000E32307 /* NotificationView.swift */,
+				E20C58032896BE5000E32307 /* ComplicationController.swift */,
+				E20C58052896BE5100E32307 /* Assets.xcassets */,
+				E20C580A2896BE5100E32307 /* Info.plist */,
+				E20C580B2896BE5100E32307 /* PushNotificationPayload.apns */,
+				E20C58072896BE5100E32307 /* Preview Content */,
+			);
+			path = "WristHome WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		E20C58072896BE5100E32307 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E20C58082896BE5100E32307 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E20C58132896BE5100E32307 /* WristHomeTests */ = {
+			isa = PBXGroup;
+			children = (
+				E20C58142896BE5100E32307 /* WristHomeTests.swift */,
+			);
+			path = WristHomeTests;
+			sourceTree = "<group>";
+		};
+		E20C581D2896BE5100E32307 /* WristHomeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E20C581E2896BE5100E32307 /* WristHomeUITests.swift */,
+				E20C58202896BE5100E32307 /* WristHomeUITestsLaunchTests.swift */,
+			);
+			path = WristHomeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E20C57E62896BE4E00E32307 /* WristHome */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E20C582C2896BE5100E32307 /* Build configuration list for PBXNativeTarget "WristHome" */;
+			buildPhases = (
+				E20C57E52896BE4E00E32307 /* Resources */,
+				E20C582B2896BE5100E32307 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E20C57EE2896BE4E00E32307 /* PBXTargetDependency */,
+			);
+			name = WristHome;
+			productName = WristHome;
+			productReference = E20C57E72896BE4E00E32307 /* WristHome.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		E20C57EA2896BE4E00E32307 /* WristHome WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E20C58282896BE5100E32307 /* Build configuration list for PBXNativeTarget "WristHome WatchKit App" */;
+			buildPhases = (
+				E20C57E92896BE4E00E32307 /* Resources */,
+				E20C58272896BE5100E32307 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E20C57F92896BE5000E32307 /* PBXTargetDependency */,
+			);
+			name = "WristHome WatchKit App";
+			productName = "WristHome WatchKit App";
+			productReference = E20C57EB2896BE4E00E32307 /* WristHome WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		E20C57F52896BE5000E32307 /* WristHome WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E20C58242896BE5100E32307 /* Build configuration list for PBXNativeTarget "WristHome WatchKit Extension" */;
+			buildPhases = (
+				E20C57F22896BE5000E32307 /* Sources */,
+				E20C57F32896BE5000E32307 /* Frameworks */,
+				E20C57F42896BE5000E32307 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WristHome WatchKit Extension";
+			productName = "WristHome WatchKit Extension";
+			productReference = E20C57F62896BE5000E32307 /* WristHome WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		E20C580F2896BE5100E32307 /* WristHomeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E20C582F2896BE5100E32307 /* Build configuration list for PBXNativeTarget "WristHomeTests" */;
+			buildPhases = (
+				E20C580C2896BE5100E32307 /* Sources */,
+				E20C580D2896BE5100E32307 /* Frameworks */,
+				E20C580E2896BE5100E32307 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E20C58122896BE5100E32307 /* PBXTargetDependency */,
+			);
+			name = WristHomeTests;
+			productName = WristHomeTests;
+			productReference = E20C58102896BE5100E32307 /* WristHomeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E20C58192896BE5100E32307 /* WristHomeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E20C58322896BE5100E32307 /* Build configuration list for PBXNativeTarget "WristHomeUITests" */;
+			buildPhases = (
+				E20C58162896BE5100E32307 /* Sources */,
+				E20C58172896BE5100E32307 /* Frameworks */,
+				E20C58182896BE5100E32307 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E20C581C2896BE5100E32307 /* PBXTargetDependency */,
+			);
+			name = WristHomeUITests;
+			productName = WristHomeUITests;
+			productReference = E20C581A2896BE5100E32307 /* WristHomeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E20C57E12896BE4E00E32307 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					E20C57E62896BE4E00E32307 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					E20C57EA2896BE4E00E32307 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					E20C57F52896BE5000E32307 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					E20C580F2896BE5100E32307 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = E20C57F52896BE5000E32307;
+					};
+					E20C58192896BE5100E32307 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = E20C57EA2896BE4E00E32307;
+					};
+				};
+			};
+			buildConfigurationList = E20C57E42896BE4E00E32307 /* Build configuration list for PBXProject "WristHome" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E20C57E02896BE4E00E32307;
+			productRefGroup = E20C57E82896BE4E00E32307 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E20C57E62896BE4E00E32307 /* WristHome */,
+				E20C57EA2896BE4E00E32307 /* WristHome WatchKit App */,
+				E20C57F52896BE5000E32307 /* WristHome WatchKit Extension */,
+				E20C580F2896BE5100E32307 /* WristHomeTests */,
+				E20C58192896BE5100E32307 /* WristHomeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E20C57E52896BE4E00E32307 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E20C57E92896BE4E00E32307 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E20C57F12896BE5000E32307 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E20C57F42896BE5000E32307 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E20C58092896BE5100E32307 /* Preview Assets.xcassets in Resources */,
+				E20C58062896BE5100E32307 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E20C580E2896BE5100E32307 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E20C58182896BE5100E32307 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E20C57F22896BE5000E32307 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E20C58002896BE5000E32307 /* NotificationController.swift in Sources */,
+				E20C57FE2896BE5000E32307 /* ContentView.swift in Sources */,
+				E20C58042896BE5000E32307 /* ComplicationController.swift in Sources */,
+				E20C57FC2896BE5000E32307 /* WristHomeApp.swift in Sources */,
+				E20C58022896BE5000E32307 /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E20C580C2896BE5100E32307 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E20C58152896BE5100E32307 /* WristHomeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E20C58162896BE5100E32307 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E20C581F2896BE5100E32307 /* WristHomeUITests.swift in Sources */,
+				E20C58212896BE5100E32307 /* WristHomeUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E20C57EE2896BE4E00E32307 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E20C57EA2896BE4E00E32307 /* WristHome WatchKit App */;
+			targetProxy = E20C57ED2896BE4E00E32307 /* PBXContainerItemProxy */;
+		};
+		E20C57F92896BE5000E32307 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E20C57F52896BE5000E32307 /* WristHome WatchKit Extension */;
+			targetProxy = E20C57F82896BE5000E32307 /* PBXContainerItemProxy */;
+		};
+		E20C58122896BE5100E32307 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E20C57F52896BE5000E32307 /* WristHome WatchKit Extension */;
+			targetProxy = E20C58112896BE5100E32307 /* PBXContainerItemProxy */;
+		};
+		E20C581C2896BE5100E32307 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E20C57EA2896BE4E00E32307 /* WristHome WatchKit App */;
+			targetProxy = E20C581B2896BE5100E32307 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E20C58222896BE5100E32307 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E20C58232896BE5100E32307 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E20C58252896BE5100E32307 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WristHome WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = QB5537HHBS;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WristHome WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "WristHome WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cz.binarybase.WristHome.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		E20C58262896BE5100E32307 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WristHome WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = QB5537HHBS;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WristHome WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "WristHome WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cz.binarybase.WristHome.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		E20C58292896BE5100E32307 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QB5537HHBS;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = WristHome_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "WristHome WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cz.binarybase.WristHome.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		E20C582A2896BE5100E32307 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QB5537HHBS;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = WristHome_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "WristHome WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cz.binarybase.WristHome.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		E20C582D2896BE5100E32307 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QB5537HHBS;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cz.binarybase.WristHome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E20C582E2896BE5100E32307 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QB5537HHBS;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cz.binarybase.WristHome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		E20C58302896BE5100E32307 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QB5537HHBS;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cz.binarybase.WristHomeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WristHome WatchKit Extension.appex/WristHome WatchKit Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		E20C58312896BE5100E32307 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QB5537HHBS;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cz.binarybase.WristHomeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WristHome WatchKit Extension.appex/WristHome WatchKit Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		E20C58332896BE5100E32307 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QB5537HHBS;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cz.binarybase.WristHomeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "WristHome WatchKit App";
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		E20C58342896BE5100E32307 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QB5537HHBS;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cz.binarybase.WristHomeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "WristHome WatchKit App";
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E20C57E42896BE4E00E32307 /* Build configuration list for PBXProject "WristHome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E20C58222896BE5100E32307 /* Debug */,
+				E20C58232896BE5100E32307 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E20C58242896BE5100E32307 /* Build configuration list for PBXNativeTarget "WristHome WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E20C58252896BE5100E32307 /* Debug */,
+				E20C58262896BE5100E32307 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E20C58282896BE5100E32307 /* Build configuration list for PBXNativeTarget "WristHome WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E20C58292896BE5100E32307 /* Debug */,
+				E20C582A2896BE5100E32307 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E20C582C2896BE5100E32307 /* Build configuration list for PBXNativeTarget "WristHome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E20C582D2896BE5100E32307 /* Debug */,
+				E20C582E2896BE5100E32307 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E20C582F2896BE5100E32307 /* Build configuration list for PBXNativeTarget "WristHomeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E20C58302896BE5100E32307 /* Debug */,
+				E20C58312896BE5100E32307 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E20C58322896BE5100E32307 /* Build configuration list for PBXNativeTarget "WristHomeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E20C58332896BE5100E32307 /* Debug */,
+				E20C58342896BE5100E32307 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E20C57E12896BE4E00E32307 /* Project object */;
+}
