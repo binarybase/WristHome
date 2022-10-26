@@ -9,18 +9,18 @@ import ClockKit
 
 
 class ComplicationController: NSObject, CLKComplicationDataSource {
-    
+    let appMainColorAlaph40 = UIColor(red: 234/255, green: 188/255, blue: 188/255, alpha: 1)
     // MARK: - Complication Configuration
 
     func getComplicationDescriptors(handler: @escaping ([CLKComplicationDescriptor]) -> Void) {
-        let descriptors = [
-            CLKComplicationDescriptor(identifier: "complication", displayName: "WristHome", supportedFamilies: CLKComplicationFamily.allCases)
-            // Multiple complication support can be added here with more descriptors
-        ]
-        
-        // Call the handler with the currently supported complication descriptors
-        handler(descriptors)
-    }
+            let descriptors = [
+                CLKComplicationDescriptor(identifier: "complication", displayName: "WristHome", supportedFamilies: [CLKComplicationFamily.circularSmall, CLKComplicationFamily.graphicCircular, CLKComplicationFamily.graphicCorner])
+                // Multiple complication support can be added here with more descriptors
+            ]
+            
+            // Call the handler with the currently supported complication descriptors
+            handler(descriptors)
+        }
     
     func handleSharedComplicationDescriptors(_ complicationDescriptors: [CLKComplicationDescriptor]) {
         // Do any necessary work to support these newly shared complication descriptors
@@ -41,8 +41,12 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     // MARK: - Timeline Population
     
     func getCurrentTimelineEntry(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTimelineEntry?) -> Void) {
-        // Call the handler with the current timeline entry
-        handler(nil)
+        if let template = getComplicationTemplate(for: complication, using: Date()) {
+            let entry = CLKComplicationTimelineEntry(date: Date(), complicationTemplate: template)
+            handler(entry)
+        } else {
+            handler(nil)
+        }
     }
     
     func getTimelineEntries(for complication: CLKComplication, after date: Date, limit: Int, withHandler handler: @escaping ([CLKComplicationTimelineEntry]?) -> Void) {
@@ -51,9 +55,25 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     }
 
     // MARK: - Sample Templates
+    func getComplicationTemplate(for complication: CLKComplication, using date: Date) -> CLKComplicationTemplate? {
+            switch complication.family {
+            case .graphicCorner:
+                return CLKComplicationTemplateGraphicCornerCircularImage(imageProvider: CLKFullColorImageProvider(fullColorImage: (UIImage(systemName: "homekit")?.withTintColor(appMainColorAlaph40))!))
+            case .graphicCircular:
+                return CLKComplicationTemplateGraphicCircularImage(imageProvider: CLKFullColorImageProvider(fullColorImage: (UIImage(systemName: "homekit")?.withTintColor(appMainColorAlaph40))!))
+            case .circularSmall:
+                return CLKComplicationTemplateCircularSmallSimpleImage(imageProvider: CLKImageProvider(onePieceImage: (UIImage(systemName: "homekit")?.withTintColor(appMainColorAlaph40))!))
+            default:
+                return nil
+            }
+        }
     
     func getLocalizableSampleTemplate(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTemplate?) -> Void) {
-        // This method will be called once per supported complication, and the results will be cached
-        handler(nil)
+        let template = getComplicationTemplate(for: complication, using: Date())
+        if let t = template {
+            handler(t)
+        } else {
+            handler(nil)
+        }
     }
 }
